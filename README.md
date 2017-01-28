@@ -55,9 +55,9 @@ Use the following command to create a simple Hello World application:
 dotnet new -l F# -t Console
 ```
 
-### Compiling the application for another operating system and architecture
+### Compiling the application for another operating system
 
-Reference a new runtime within the `project.json` file:
+Reference the macOS Sierra runtime in the `project.json` file:
 
 ``` json
   "runtimes": {
