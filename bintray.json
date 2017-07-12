@@ -1,0 +1,31 @@
+{
+    "package": {
+        "name": "lab-hello-world-fsharp",
+        "repo": "generic",
+        "subject": "odaceo",
+        "desc": "A simple F# application on Linux.",
+        "website_url": "https://github.com/odaceo/lab-hello-world-fsharp",
+        "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-fsharp/issues",
+        "vcs_url": "https://github.com/odaceo/lab-hello-world-fsharp.git",
+        "licenses": ["Apache-2.0"],
+        "public_download_numbers": true,
+        "public_stats": true
+    },
+
+    "version": {
+        "name": "master",
+        "gpgSign": false
+    },
+
+    "files": [
+        {
+            "includePattern": "bin/release/netcoreapp1.1/(.*)/publish/(.*)", 
+            "uploadPattern": "/lab-hello-world-fsharp/master/$1/$2",
+            "matrixParams": {
+                "override": 1 
+            }
+        }
+    ],
+
+    "publish": true
+}
